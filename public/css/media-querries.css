@@ -1,0 +1,35 @@
+@media screen and (width<500px) {
+    nav ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .side-ul{
+        display: flex;
+        flex-direction:column ;
+        position: absolute;
+        background-color: black;
+        top:30px;
+        left: 0;
+        width: 40%;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .side-ul-li{
+        display: flex;
+        justify-content: center;
+        padding: 5px 20px;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+    .side-ul-li a {
+        font-size: medium;
+    }
+    .card-container{
+        margin: 0px 10px;
+    }
+    .card-container::-webkit-scrollbar{
+        display: none;
+    }
+}

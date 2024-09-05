@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.hamburger{
+    background-color: black;
+    border: none;
+    display: none;
+}
+.hamburger img{
+    filter: invert();
+    transform: scale(0.8);
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 8vh;
+    min-height: 30px;
+    width:100vw;
+}
+.nav-span{
+    color: white;
+    font-family: fantasy;
+    font-size: larger;
+    letter-spacing: 4px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: fit-content;
+    gap: 2vw;
+}
+nav ul a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2vw;
+}
+nav input{
+    width: 15vw;
+    min-width: 80px;
+    height: 4vh;
+    min-height: 20px;
+    border-radius: 10px;
+    padding: 0px 5px;
+    border: none;
+    font-size: 10px;
+}
+#search-text{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#search-text button{
+    width: 5vw;
+    min-width: 50px;
+    height: 4vh;
+    min-height: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    /* position: relative; */
+    overflow-y: scroll;
+    height: 93vh;
+    margin-left: 15px;
+}
+.card {
+    height: 40vh;
+    min-height: 150px;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10px;
+}
+.card a{
+    text-decoration: none;
+    color:black;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.card-heading{
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 2px;
+}
+.card-para{
+    width: 100%;
+    font-size: small;
+}
+.card-container::-webkit-scrollbar{
+    background-color: transparent;
+    width: 15px;
+}
+.card-container::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    height: 30px;
+    border-radius: 6px;
+}
+.card-container.scrolling::-webkit-scrollbar{
+    background-color: rgba(109, 109, 109, 0.5);
+    transition: all 2.5s ease;
+}
+.card-container.card-container.scrolling::-webkit-scrollbar-thumb{
+    background-color: rgb(43, 43, 43);
+}
